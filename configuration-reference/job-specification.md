@@ -249,6 +249,7 @@ pinotClusterSpecs:
 | segmentUriSuffix        | append this string after the path of the push destination.                                                                                                                                          |
 | pushFileNamePattern     | segment name pattern for which segments to push, supported glob and regex patterns. E.g. 'glob:\*\*2023-01\*' will push all the segment files under the outputDirURI whose names contain '2023-01'. |
 
+| batchSegmentUpload      | Upload segments in batch mode which is faster than uploading segments one after the other. Works when the jobType is set to SegmentMetadataPush |
 #### Example
 
 ```
